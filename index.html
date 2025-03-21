@@ -1,73 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Suite landing page | Joseph Kabemba</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Suite landing page | Joseph Kabemba</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/logo.svg" alt="Suite logo" class="header__logo" />
+      <button class="header__button">Request Beta Access</button>
+    </header>
 
-  <header class="header">
-    <img src="./assets/logo.svg" alt="Suite logo" class="header__logo">
-    <button class="header__button">
-      Request Beta Access
-    </button>
-  </header>
+    <main class="hero">
+      <section class="hero__content">
+        <img
+          src="assets/pattern-curved-line-1.svg"
+          alt="curved line"
+          class="hero__curved-line"
+        />
+        <div class="hero__content">
+          <h1 class="hero__title">
+            A <strong>super solution</strong> for your
+            <strong>business.</strong>
+          </h1>
+          <p class="hero__description">
+            Our marketing and sales automations help you scale your outreach to
+            get more leads for your company.
+          </p>
+          <button class="hero__button">Request Beta Access</button>
+        </div>
+      </section> 
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="/assets/image-hero-portrait@2x.png"
+        />
+        <img
+          src="/assets/image-hero-landscape@2x.png"
+          alt="Landscape"
+          class="hero__image"
+        />
+      </picture>
 
-  <main>
-    <section>
-      <img src="assets/pattern-curved-line-1.svg" alt="curved line">
-      <h1>A <strong>super solution</strong> for your <strong>business.</strong></h1>
-      <p>Our marketing and sales automations help you scale your outreach to 
-         get more leads for your company. </p>
-      <button>Request Beta Access</button>
+      <section class="hero__stats">
+        <div>
+          <strong>2K+</strong>
+          <span>Companies</span>
+        </div>
+        <div>
+          <strong>8</strong>
+          <span>Languages</span>
+        </div>
+        <div>
+          <strong>1.2M</strong>
+          <span>Leads</span>
+        </div>
+      </section>
+    </main>
+
+    <section class="testimonials">
+      <picture>
+        <source
+          media="(min-width:1024px)"
+          srcset="/assets/image-jeremy-large@2x.png"
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="/assets/image-jeremy-large.png"
+        />
+        <img
+          src="/assets/image-jeremy-small.png"
+          alt="Jeremy Robinson"
+          class="testimonials__image"
+        />
+      </picture>
+      <img
+        src="/assets/pattern-curved-line-2.svg"
+        alt=""
+        class="testimonials__line"
+      />
+      <div class="testimonials__content">
+        <h2 class="testimonials__title">It just <span>works.</span></h2>
+        <p class="testimonials__quote">
+          “I really like how it is an all-in-one solution that handle many of
+          the tasks that you would normally need separate tools to do the same
+          job. This thing is a miracle worker.”
+        </p>
+        <p class="testimonials__author">
+          <strong>Jeremy Robinson</strong>
+          <span>CMO, Fylo</span>
+        </p>
+      </div>
     </section>
 
-    <section>
-      <div>
-        2K+
-        Companies
+    <footer class="footer">
+      <img src="/assets/logo.svg" alt="Suite logo" class="footer__logo" />
+      <div class="footer__copyright">Copyright - Suite</div>
+      <div class="footer__icons">
+        <img src="/assets/icon-facebook.svg" alt="facebook icon" />
+        <img src="/assets/icon-twitter.svg" alt="twitter icon" />
+        <img src="/assets/icon-instagram.svg" alt="instagram icon" />
       </div>
-      <div>
-        8
-        Languages
-      </div>
-      <div>
-        1.2M
-        Leads
-      </div>
-    </section>
-  </main>
-
-  <section class="testimonials">
-    <picture>
-      <!-- <source media="(min-width:1024px)" srcset="/assets/image-jeremy-large@2x.png"> -->
-      <source media="(min-width:768px)" srcset="/assets/image-jeremy-large@2x.png">
-      <img src="/assets/image-jeremy-small.png" alt="Jeremy Robinson" class="testimonials__image">
-    </picture>
-    <img src="/assets/pattern-curved-line-2.svg" alt="" class="testimonials__line">
-    <div class="testimonials__content">
-      <h2 class="testimonials__title">It just <span>works.</span></h2>
-      <p class="testimonials__quote">“I really like how it is an all-in-one solution that handle many of the tasks that you would normally need separate tools to do the same job. This thing is a miracle worker.”</p>
-      <p class="testimonials__author">
-        <strong>Jeremy Robinson</strong>
-        <span>CMO, Fylo</span>
-      </p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <img src="/assets/logo.svg" alt="Suite logo" class="footer__logo">
-    <div class="footer__copyright">Copyright - Suite</div>
-    <div class="footer__icons">
-      <img src="/assets/icon-facebook.svg" alt="facebook icon">
-      <img src="/assets/icon-twitter.svg" alt="twitter icon">
-      <img src="/assets/icon-instagram.svg" alt="instagram icon">
-    </div>
-  </footer>
-  
-
-</body>
+    </footer>
+  </body>
 </html>

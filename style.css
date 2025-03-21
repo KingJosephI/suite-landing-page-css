@@ -34,22 +34,111 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 26px 16px 56px 16px;
 
   .header__button {
     background-color: transparent;
-    border: 1px solid #172339;
-    border-radius: 4px;
-    padding: 8px 16px;  
+    border: 2px solid #172339;
+    padding: 15px 18px;  
     font-weight: bold;
+    border-radius: 6px;
+    font-weight: 700;
+    font-family: Epilogue, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
   }
 
   .header__button:hover {
-      background-color: #172339;
-      color: #fff;
-      cursor: pointer;
-      transition: 0.2s ease-in-out;
+    background-color: #172339;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
   }
 }  
+
+.hero {
+  /* background-color: teal; */
+  position: relative;
+  padding-inline: 16px;
+  padding-bottom: 200px;
+  display: grid;
+  gap: 56px;
+
+  .hero__curved-line {
+    width: 40%;
+    text-align: right;
+    /* right: 62px; */
+    right: 17%;
+    /* bottom: 30px; */
+    position: absolute;
+  }
+
+  .hero__title {
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -0.53px;
+    font-weight: normal;
+    padding-top: 25px;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;    
+    gap: 32px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.09px;
+    color: #49566D;
+  }
+
+  .hero__button {
+    padding: 15px 18px;
+    background-color: transparent;
+    background-color: #172339;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-family: Epilogue, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+  }
+
+  .hero__button:hover {
+    cursor: pointer;
+    background: linear-gradient(170deg, #a933ff, #CB30E3, #ff9f1c);
+    transition: 0.2s ease-in-out;
+  }
+
+  .hero__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  
+    text-transform: uppercase;
+
+    strong {
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    span {
+      color: #49566D;
+    }
+  }
+  
+  .hero__stats * {
+    display: block;
+    text-align: center;
+  }
+
+}
 
 .testimonials {
   background-color: #172339;
