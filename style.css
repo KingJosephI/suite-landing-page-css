@@ -101,8 +101,31 @@ body {
 
   @media (min-width: 1024px) {
     margin-inline: 164px;
+    flex-direction: row;
+    padding-inline: 125px;
+    padding-block: 0;
+    gap: 53px;
+    
+    picture {
+      width: 200%;
+      margin-top: -40px;
+      margin-bottom: -9px;
+    }
+  .testimonials__title {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
   }
 
+  .testimonials__content {
+    /* padding-block: 88px; */
+    text-align: left;
+  }
+
+  .testimonials__image {
+    margin-top: 0;
+  }
+}
 
 }
 .footer {
@@ -116,7 +139,6 @@ body {
   /* height: 420px; */
   position: relative;
   z-index: 1;
-
   background-color: #F3EDE7;
 
   .footer__icons {
