@@ -27,7 +27,6 @@ body {
   line-height: 1.6;
   color: #222;
   background-color: #fff;
-  /* padding: 18px; */
 }
 
 .header {
@@ -55,10 +54,13 @@ body {
     cursor: pointer;
     transition: 0.2s ease-in-out;
   }
+
+    @media (min-width: 768px) {
+      margin-inline: 40px;
+    }
 }  
 
 .hero {
-  /* background-color: teal; */
   position: relative;
   padding-inline: 16px;
   padding-bottom: 200px;
@@ -68,10 +70,17 @@ body {
   .hero__curved-line {
     width: 40%;
     text-align: right;
-    /* right: 62px; */
     right: 17%;
-    /* bottom: 30px; */
     position: absolute;
+
+    @media (min-width: 768px) {
+      width: 30%;
+      right: 41%;
+    }
+    @media (min-width: 1024px) {
+      width: 22%;
+      right: 60%;
+    }
   }
 
   .hero__title {
@@ -80,6 +89,15 @@ body {
     letter-spacing: -0.53px;
     font-weight: normal;
     padding-top: 25px;
+    text-wrap: balance;
+
+    @media (min-width: 768px) {
+      font-size: 56px;
+      line-height: 64px;
+      letter-spacing: -0.78px;
+      width: 150%;
+      z-index: 3;
+    }
   }
 
   .hero__content {
@@ -87,6 +105,11 @@ body {
     flex-direction: column;
     align-items: start;    
     gap: 32px;
+
+    @media (min-width: 768px) {
+      align-self: center;
+      gap: 40px;
+    }
   }
 
   .hero__description {
@@ -120,7 +143,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
-  
     text-transform: uppercase;
 
     strong {
@@ -131,11 +153,45 @@ body {
     span {
       color: #49566D;
     }
+
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      grid-column: 1/3;
+      grid-row: 2/3;
+      /* background-color: teal; */
+    }
+    @media (min-width: 1024px) {
+      flex-direction: column;
+      grid-column: 3/4;
+      grid-row: 1/2;
+      justify-content: center;
+      gap: 63px;
+    }
   }
   
   .hero__stats * {
     display: block;
     text-align: center;
+  }
+
+  .hero__image {
+    @media (min-width: 768px) {
+      height: 90%;
+      width: 100%;
+    }
+    @media (min-width: 1024px) {
+      height: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-inline: 40px;
+    grid-template-columns: repeat(2, 1fr); ;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr); ;
   }
 
 }
@@ -207,7 +263,6 @@ body {
   }
 
   .testimonials__content {
-    /* padding-block: 88px; */
     text-align: left;
   }
 
@@ -225,7 +280,6 @@ body {
   gap: 33px;
   padding-bottom: 80px;
   padding-top: 56px;
-  /* height: 420px; */
   position: relative;
   z-index: 1;
   background-color: #F3EDE7;
