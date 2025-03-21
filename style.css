@@ -55,9 +55,13 @@ body {
     transition: 0.2s ease-in-out;
   }
 
-    @media (min-width: 768px) {
-      margin-inline: 40px;
-    }
+  @media (min-width: 768px) {
+    margin-inline: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-inline: 164px;
+  }
 }  
 
 .hero {
@@ -79,7 +83,7 @@ body {
     }
     @media (min-width: 1024px) {
       width: 22%;
-      right: 60%;
+      right: 54%;
     }
   }
 
@@ -97,6 +101,10 @@ body {
       letter-spacing: -0.78px;
       width: 150%;
       z-index: 3;
+    }
+
+    @media (min-width: 1024px) {
+      width: 200%;
     }
   }
 
@@ -191,6 +199,7 @@ body {
     grid-template-columns: repeat(2, 1fr); ;
   }
   @media (min-width: 1024px) {
+    margin-inline: 164px;
     grid-template-columns: repeat(3, 1fr); ;
   }
 
